@@ -6,7 +6,7 @@ window.module = {
             throw 'name and namespace must be present.';
         }
 
-        window.rootNamespace[value.namespace + value.name] = value;
+        window.rootNamespace[value.namespace + '/' +  value.name] = value;
     }
 }
 

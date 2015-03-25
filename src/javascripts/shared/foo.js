@@ -2,7 +2,7 @@
 	console.log(module);
 
 	function Foo() {}
-	Foo.prototype.namespace = 'shared';
+	Foo.namespace = 'shared';
 
-	module.exports = namespaceify(Foo);
-}(typeof module !== 'undefined' ? module : app))
+	module.exports = Foo;
+}(module))
